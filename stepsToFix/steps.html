@@ -23,7 +23,7 @@
                 <a class="nav-link" href="#">About Us</a>
                 <a class="nav-link" href="../negative-effects/negative-effects.html">Issues</a>
                 <a class="nav-link" href="../stepsToFix/steps.html">Solutions</a>
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -61,7 +61,7 @@
         </section>
 
 
-        <section>
+        <section id="contact">
             <h2>Contact Us To Learn More!</h2>
             <form action="submit-form.php" method="POST">
                 <label for="name">Name:</label>
@@ -76,7 +76,22 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
+    </section>
+</main>
     </main>
+    <script>
+        // Function to scroll to the contact section
+        function scrollToContact() {
+            const contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add event listener to the contact link in the navbar
+        const contactLink = document.querySelector('.nav-link[href="#contact"]');
+        contactLink.addEventListener('click', scrollToContact);
+    </script>
+
+
     
 </body>
 </html>
