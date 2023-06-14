@@ -110,3 +110,8 @@ footer {
     color: black;
     background-color: lightgray;
 }
+
+footer p {
+    border-left: none;
+    color: black;
+}
