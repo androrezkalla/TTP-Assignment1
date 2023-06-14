@@ -83,3 +83,19 @@ a {
     font-size: 4rem;
     display: inline-block;
 }
+
+.about-container {
+    width: 100%;
+    margin: 2rem 0;
+    background: white;
+}
+
+.about-container__text {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-container__text p {
+    
+}
